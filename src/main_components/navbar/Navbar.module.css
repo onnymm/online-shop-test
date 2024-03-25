@@ -1,9 +1,14 @@
 .navbar {
+	position: fixed;
 	background: blue;
+	left: 0;
+	right: 0;
 	height: 50px;
+	padding-left: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1000;
 }
 
 .menu {

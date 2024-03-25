@@ -1,0 +1,53 @@
+.item {
+	background: lightgreen;
+	width: 12em;
+	height: 17em;
+	margin: 0.5em 0em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.item .container {
+	margin-top: 0.5em;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.item .img {
+	width: 100%;
+	transition: 0.3s;
+}
+
+.item .title {
+	background: lightpink;
+	font-size: 0.8em;
+	margin: 0px 0.8em;
+}
+
+.item .price {
+	background: white;
+	margin: 0px 0.8em;
+}
+
+.item .container .free {
+	display: flex;
+	font-size: 0.8em;
+	color: rgb(0, 196, 62);
+}
+
+.item .container .free .icon {
+	width: 1em;
+	height: 1em;
+}
+
+.item .container .free .freeLegend {
+	padding: 0px 0.4em;
+}
+
+.item:hover .img {
+	transform: scale(0.9);
+}
