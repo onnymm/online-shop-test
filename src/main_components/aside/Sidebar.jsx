@@ -1,4 +1,5 @@
 import {
+	Bars3Icon,
 	BellAlertIcon,
 	ChatBubbleLeftEllipsisIcon,
 	ClockIcon,
@@ -12,22 +13,22 @@ import {
 import style from "./Sidebar.module.css";
 import OptionButton from "./components/OptionButton";
 
-const Sidebar = ({ showSelf }) => {
+const Sidebar = ({ showSelf, useShowSelf }) => {
 	console.log("Render de Sidebar");
 
-	// let show = " active";
-
-	// if (showSelf) {
-	// 	show = " active";
-	// 	console.log("Cambio de sidebar a mostrar");
-	// } else {
-	// 	show = "";
-	// 	console.log("Cambio de sidebar a ocultar");
-	// }
+	const show = () => {
+		useShowSelf(!showSelf);
+	};
 
 	return (
 		<aside className={`${style.sidebar} ${showSelf ? style.active : ""}`}>
 			<div className={style.container}>
+				<div className={style.menu}>
+					<button className={style.sideButton} onClick={show}>
+						<Bars3Icon />
+					</button>
+					<div className={style.img}>Logo</div>
+				</div>
 				<OptionButton Icon={HomeIcon} legend={"Inicio"} />
 				<OptionButton Icon={MagnifyingGlassIcon} legend={"Buscar"} />
 				<OptionButton Icon={BellAlertIcon} legend={"Notificaciones"} />

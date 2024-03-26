@@ -3,18 +3,20 @@ import style from "./Navbar.module.css";
 const Navbar = ({ setBarShow, useBarShow }) => {
 	console.log("Render del Navbar");
 
-	const sidebarHandle = () => {
-		console.log("Menu");
-		useBarShow(!setBarShow);
-	};
+	// const sidebarHandle = () => {
+	// 	console.log("Menu");
+	// 	useBarShow(!setBarShow);
+	// };
 
 	return (
-		<nav className={style.navbar}>
+		<nav
+			className={`${style.navbar} ${setBarShow ? style.navbarActive : ""}`}
+		>
 			{/* MENU */}
 			<div className={style.menu}>
-				<button className={style.navButton} onClick={sidebarHandle}>
+				{/* <button className={style.navButton} onClick={sidebarHandle}>
 					Menu
-				</button>
+				</button> */}
 				<div className={style.logo}>Logo</div>
 			</div>
 

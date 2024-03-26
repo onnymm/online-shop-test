@@ -1,31 +1,80 @@
 .sidebar {
 	position: fixed;
-	top: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 80px;
 	background: blue;
 	transition: 0.5s;
-	height: calc(100vh - 50px);
+	height: 100vh;
+	z-index: 1000;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar.active {
 	width: 230px;
 }
 
-.container {
-	background: papayawhip;
+.sidebar .menu {
+	background: lightseagreen;
+	white-space: nowrap;
+	flex-direction: row;
+	display: flex;
+	overflow: hidden;
 }
 
-.sidebar .btn {
+/* .sidebar .btn {
 	display: flex;
-	align-items: center; /* Añade alineación vertical */
+	align-items: center; 
 	width: 50px;
 	height: 50px;
 	margin: 0px 15px;
 	white-space: nowrap;
-	transition: width 0.5s; /* Aplica la transición solo al ancho */
+	transition: width 0.5s; 
+} */
+
+.sidebar .menu .img {
+	position: fixed;
+	left: 80px;
+	flex: 1;
+	background: lightgreen;
+	width: 130px;
+	height: 50px;
+	/* width: calc(100% - 80px); */
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: 0.1s;
+	transition-delay: 0s;
+}
+
+.sidebar.active .menu .img {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.container {
+	background: papayawhip;
+}
+
+.sidebar .sideButton {
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+}
+
+.sidebar .btn {
+	display: flex;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+	transition: width 0.5s;
 }
 
 .sidebar .btn .btnContainer {
@@ -38,7 +87,6 @@
 }
 
 .sidebar .btn .icon {
-	transition: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,8 +98,9 @@
 	flex: 1;
 	background: lightblue;
 	margin-left: 15px;
-	opacity: 0;
+	/* opacity: 0; */
 	transition: 0.1s;
+	white-space: nowrap;
 }
 
 .sidebar.active .btn .btnLegend {

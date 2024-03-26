@@ -1,14 +1,19 @@
 .navbar {
 	position: fixed;
 	background: blue;
-	left: 0;
+	left: 80px;
 	right: 0;
 	height: 50px;
 	padding-left: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 1000;
+	transition: 0.5s;
+	z-index: 999;
+}
+
+.navbarActive {
+	left: 230px;
 }
 
 .menu {
@@ -37,9 +42,18 @@
 }
 
 .logo {
+	position: absolute;
+	left: 0px;
+	background-color: lightgreen;
 	width: 130px;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s;
+	display: none;
+}
+
+.navbarActive .logo {
+	opacity: 0;
 }

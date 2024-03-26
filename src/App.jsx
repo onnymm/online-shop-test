@@ -14,7 +14,7 @@ const App = () => {
 		<>
 			<Navbar setBarShow={setBarShow} useBarShow={useBarShow} />
 			<div className="content">
-				<Sidebar showSelf={setBarShow} />
+				<Sidebar showSelf={setBarShow} useShowSelf={useBarShow} />
 				{/* <div style={{ display: "flex" }}> */}
 				<Container sidebarShow={setBarShow} />
 				{/* </div> */}
