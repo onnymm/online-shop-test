@@ -8,7 +8,7 @@ const App = () => {
 	console.log("Render de app");
 
 	// SHOW/HIDE SIDEBAR
-	const [setBarShow, useBarShow] = useState(true);
+	const [setBarShow, useBarShow] = useState(false);
 
 	return (
 		<>

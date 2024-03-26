@@ -6,7 +6,12 @@ const ProductItem = ({ image, title, price }) => (
 		<img src={image} alt="Imagen" className={style.img} />
 		<div className={style.container}>
 			<div className={style.title}>{title}</div>
-			<div className={style.price}>{price}</div>
+			<div className={style.price}>
+				{price.toLocaleString("en-US", {
+					style: "currency",
+					currency: "USD",
+				})}
+			</div>
 			<div className={style.free}>
 				<div className={style.icon}>
 					<BoltIcon />

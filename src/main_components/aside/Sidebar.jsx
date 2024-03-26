@@ -24,10 +24,17 @@ const Sidebar = ({ showSelf, useShowSelf }) => {
 		<aside className={`${style.sidebar} ${showSelf ? style.active : ""}`}>
 			<div className={style.container}>
 				<div className={style.menu}>
-					<button className={style.sideButton} onClick={show}>
+					<button
+						className={`${style.sideButton} btn`}
+						onClick={show}
+					>
 						<Bars3Icon />
 					</button>
-					<div className={style.img}>Logo</div>
+					<img
+						className={style.img}
+						src="https://i.ibb.co/qpXtqGd/Logo.png"
+						alt=""
+					/>
 				</div>
 				<OptionButton Icon={HomeIcon} legend={"Inicio"} />
 				<OptionButton Icon={MagnifyingGlassIcon} legend={"Buscar"} />

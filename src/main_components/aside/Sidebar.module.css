@@ -4,12 +4,14 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 80px;
-	background: blue;
+	background: #ff0155cc;
+	backdrop-filter: blur(5px);
 	transition: 0.5s;
 	height: 100vh;
 	z-index: 1000;
 	white-space: nowrap;
 	overflow: hidden;
+	border-right: 2px solid #ff598f;
 }
 
 .sidebar.active {
@@ -17,11 +19,12 @@
 }
 
 .sidebar .menu {
-	background: lightseagreen;
+	background: transparent;
 	white-space: nowrap;
 	flex-direction: row;
 	display: flex;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
 
 /* .sidebar .btn {
@@ -38,8 +41,8 @@
 	position: fixed;
 	left: 80px;
 	flex: 1;
-	background: lightgreen;
-	width: 130px;
+	/* background: lightgreen; */
+	/* width: px; */
 	height: 50px;
 	/* width: calc(100% - 80px); */
 	margin-right: 15px;
@@ -49,6 +52,8 @@
 	opacity: 0;
 	transition: 0.1s;
 	transition-delay: 0s;
+	padding-top: 5px;
+	padding-left: 20px;
 }
 
 .sidebar.active .menu .img {
@@ -59,7 +64,7 @@
 }
 
 .container {
-	background: papayawhip;
+	background: transparent;
 }
 
 .sidebar .sideButton {
@@ -74,7 +79,7 @@
 	width: 50px;
 	height: 50px;
 	margin: 0px 15px;
-	transition: width 0.5s;
+	/* transition: 0.5s; */
 }
 
 .sidebar .btn .btnContainer {
@@ -90,15 +95,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 35px;
-	height: 35px;
+	width: 26px;
+	height: 26px;
 }
 
 .sidebar .btn .btnLegend {
 	flex: 1;
-	background: lightblue;
 	margin-left: 15px;
-	/* opacity: 0; */
+	opacity: 0;
 	transition: 0.1s;
 	white-space: nowrap;
 }
@@ -107,8 +111,9 @@
 	opacity: 1;
 	transition: 0.3s;
 	transition-delay: 0.2s;
+	transform: scale(1.05);
 }
 
 .footer {
-	background: slateblue;
+	background: transparent;
 }

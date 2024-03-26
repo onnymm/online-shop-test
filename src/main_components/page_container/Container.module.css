@@ -2,14 +2,16 @@
 	display: flex;
 	flex: 1;
 	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 .container {
 	align-self: center;
 	box-sizing: border-box;
-	background: red;
 	padding-top: 50px;
-	padding-left: 80px;
+	margin-left: 80px;
+	background-color: transparent;
 	flex: 1;
 	max-width: 1600px;
 	white-space: inherit;
@@ -19,8 +21,10 @@
 	transition: 0.5s;
 }
 
-.container.sidebarActive {
-	padding-left: 230px;
+@media screen and (max-width: 1980px) {
+	.container.sidebarActive {
+		margin-left: 230px;
+	}
 }
 
 /* ACTIVE SIDEBAR */

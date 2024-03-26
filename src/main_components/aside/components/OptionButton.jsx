@@ -2,7 +2,7 @@ import style from "../Sidebar.module.css";
 
 const OptionButton = ({ Icon, legend }) => (
 	<div>
-		<button className={style.btn}>
+		<button className={`${style.btn} btn-large`}>
 			<div className={style.btnContainer}>
 				<div className={style.icon}>
 					<Icon />

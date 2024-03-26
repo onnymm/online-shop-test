@@ -1,3 +1,9 @@
+import {
+	BellAlertIcon,
+	ShoppingCartIcon,
+	UserIcon,
+} from "@heroicons/react/24/solid";
+
 import style from "./Navbar.module.css";
 
 const Navbar = ({ setBarShow, useBarShow }) => {
@@ -21,18 +27,29 @@ const Navbar = ({ setBarShow, useBarShow }) => {
 			</div>
 
 			{/* BUSCADOR */}
-			<input type="text" id="main-searcher" className={style.search} />
+			<input
+				type="text"
+				placeholder="Buscar"
+				id="main-searcher"
+				className={style.search}
+			/>
 
 			{/* OPCIONES */}
 			<ul className={style.options}>
 				<li>
-					<button className={style.navButton}>Cart</button>
+					<button className={`${style.navButton} btn`}>
+						<ShoppingCartIcon />
+					</button>
 				</li>
 				<li>
-					<button className={style.navButton}>Nots</button>
+					<button className={`${style.navButton} btn`}>
+						<BellAlertIcon />
+					</button>
 				</li>
 				<li>
-					<button className={style.navButton}>User</button>
+					<button className={`${style.navButton} btn`}>
+						<UserIcon />
+					</button>
 				</li>
 			</ul>
 		</nav>
