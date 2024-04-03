@@ -10,6 +10,7 @@ import SidebarContext from "../contexts/SidebarContext";
 import SidebarButton from "./Templates/SidebarButton";
 import ButtonSidebarNotifications from "./sidebar/ButonSidebarNotifications";
 import ButtonSidebarHome from "./sidebar/ButtonSidebarHome";
+import ButtonSidebarProducts from "./sidebar/ButtonSidebarProducts";
 import ButtonSidebarPurchases from "./sidebar/ButtonSidebarPurchases";
 
 const Sidebar = ({ display, show }) => {
@@ -34,6 +35,7 @@ const Sidebar = ({ display, show }) => {
 				/>
 				<ButtonSidebarHome />
 				<SidebarButton Icon={MagnifyingGlassIcon} legend={"Buscar"} />
+				<ButtonSidebarProducts />
 				<ButtonSidebarNotifications />
 				<ButtonSidebarPurchases />
 				<SidebarButton Icon={HeartIcon} legend={"Favoritos"} />

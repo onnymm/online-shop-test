@@ -1,5 +1,9 @@
-import { NavLink, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import TestApp from "../TestApp";
+import Home from "./routes/home/Home";
+import NewPurchase from "./routes/new_purchase/NewPurchase";
+import PaymentPage from "./routes/new_purchase/PaymentPage";
+import { loader as purchaseLoader } from "./routes/new_purchase/purchase";
 import NotificationsPanel from "./routes/notifications/NotificationsPanel";
 import ProductDetail from "./routes/products/ProductDetail";
 import ProductsList from "./routes/products/ProductsList";
@@ -13,7 +17,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				index: true,
-				element: <NavLink to={"/productos"}>Productos</NavLink>,
+				element: <Home />,
 			},
 			{
 				path: "/productos",
@@ -31,6 +35,15 @@ const router = createBrowserRouter([
 			{
 				path: "/compras",
 				element: <Purchases />,
+			},
+			{
+				path: "/comprar/:itemId/:qty",
+				element: <NewPurchase />,
+				loader: purchaseLoader,
+			},
+			{
+				path: "/comprar/pago",
+				element: <PaymentPage />,
 			},
 		],
 	},

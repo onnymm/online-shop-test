@@ -4,6 +4,8 @@
 	height: 100%;
 }
 
+/* ESTILOS GLOBALES */
+
 body {
 	margin: 0;
 	height: 100%;
@@ -16,28 +18,280 @@ body {
 
 h1 {
 	margin: 0;
-	font-size: 1.3em;
+	font-size: 2em;
 	/* color: #ff5656; */
 }
 
 h2 {
 	margin: 0;
-	font-size: 1.15em;
+	font-size: 1.7em;
 	/* color: #ff5656; */
+}
+
+h6 {
+	font-size: 0.7em;
+	font-weight: 200;
+	color: #bbbbbb;
 }
 
 a {
 	text-decoration: none;
 }
 
+input {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	/* font-size: 12px; */
+	color: white;
+	border: 0;
+}
+
 button {
 	font-family: "Poppins", sans-serif;
 	color: white;
+	border: 0;
 }
 
-/* --------------------- */
-/* ELEMENTOS DEL SIDEBAR */
-/* --------------------- */
+img {
+	border-radius: 0.5em;
+}
+
+/* Código que copié y pegué */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+.highlight {
+	color: #ff5656;
+}
+
+.horizontal-display {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+}
+
+.vertical-display {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.h-tight-margin {
+	margin: 0em 0.5em;
+}
+
+.v-tight-margin {
+	margin: 0.5em 0em;
+}
+
+.h-normal-margin {
+	margin: 0em 1em;
+}
+
+.v-normal-margin {
+	margin: 1em 0em;
+}
+
+.v-align {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.size-h-100 {
+	width: 100%;
+}
+
+.horizontal-grid-2fr {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em
+}
+/* ESTILOS, APARIENCIAS Y COMPORTAMIETO DE ELEMENTOS */
+
+.opt-btn {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	height: 2.5em;
+	width: fit-content;
+	padding: 0.5em 0.8em;
+	border-radius: 0.75em;
+	transition: 0.05s;
+}
+
+.opt-btn:active {
+	transform: scale(0.97);
+}
+
+.main-btn {
+	background-color: #ff5656;
+	border: 0;
+}
+
+.main-btn:hover {
+	background-color: #fd7272;
+}
+
+.main-btn:active {
+	background-color: #ff8989;
+}
+
+.secondary-btn {
+	background-color: #616161;
+	border: 0;
+}
+
+.secondary-btn:hover {
+	background-color: #6f6f6f;
+}
+
+.secondary-btn:active {
+	background-color: #8c8c8c;
+}
+
+.field-style {
+	width: 10em;
+	height: 2.5em;
+	border: 2px solid #616161;
+	/* padding: 0; */
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+	font-weight: 600;
+	color: #222222;
+}
+
+.field-style[type="password"] {
+	font-weight: 900;
+	letter-spacing: 0.3em;
+}
+
+.img-medium {
+	width: 9em;
+	height: 9em;
+}
+
+.unactive-btn {
+	box-sizing: border-box;
+	background-color: #bbbbbb;
+	color: white;
+}
+
+.v-section {
+	margin: 1em 0em;
+}
+
+/* Tamaños variables de componentes */
+
+.size-3em {
+	width: 3em;
+}
+
+.size-max {
+	width: 100%;
+}
+
+/* ESTILOS INTERNOS PARA SUBCOMPONENTES DE ELEMENTOS */
+
+.int-opt-btn-icon-container {
+	width: 1.3em;
+	height: 1.3em;
+	margin: -0.1em 0.3em 0em 0em;
+}
+
+.int-quantity-widget {
+	display: flex;
+	flex-direction: row;
+}
+
+.int-qty-wdg-field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3em;
+	border-top: 1px solid #616161;
+	border-bottom: 1px solid #616161;
+	padding: calc(0.5em - 1px) 1em;
+	background-color: #222222;
+}
+
+.int-qty-wdg-btn {
+	cursor: pointer;
+	width: fit-content;
+	padding: 0.5em 0.8em;
+	transition: 0.05s;
+}
+
+.int-qty-wdg-minus {
+	border-radius: 0.75em 0 0 0.75em;
+}
+/*  */
+.int-qty-wdg-plus {
+	border-radius: 0 0.75em 0.75em 0;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ESTILOS DE COMPONENTES ÚNICOS */
 
 .sidebar {
 	z-index: 1000;
@@ -157,16 +411,6 @@ button {
 	height: 100%;
 }
 
-.page-container {
-	/* background-color: #ff3838; */
-	margin: 0em 0.8em 2em 0.8em;
-	padding: 1em;
-	height: 100%;
-	border: 1px solid #616161;
-	border-radius: 0.5em;
-	background-color: #222222;
-}
-
 /* --------------------- */
 /* ESTILOS DE LOS TEXTOS */
 /* --------------------- */
@@ -182,6 +426,16 @@ button {
 
 /* BOTONES */
 /* BOTÓN PRINCIPAL */
+
+.-main-btn {
+	cursor: pointer;
+	margin: 0.5em;
+	border: 0;
+	padding: 0.5em 1em;
+	border-radius: 0.75em;
+	background-color: #ff5656;
+	transition: 0.05s;
+}
 
 .sidebar-btn {
 	display: flex;
@@ -344,13 +598,30 @@ button {
 	height: 4em;
 }
 
-.detail-img {
+.container-style {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 8em;
-	height: 8em;
-	border-radius: 0.3em;
+	flex-direction: column;
+	margin: 0.5em;
+	padding: 0.5em;
+	border: 1px solid #616161;
+	border-radius: 0.5em;
+	color: white;
+	background-color: #222222;
+}
+
+.page-container {
+	margin: 0em 0.8em 2em 0.8em;
+	padding: 1em;
+}
+
+.elements-container {
+	width: fit-content;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.text-box {
+	margin: 0em 0.5em 0.5em 0.5em;
 }
 
 /* PANTALLA DE CARGA */
